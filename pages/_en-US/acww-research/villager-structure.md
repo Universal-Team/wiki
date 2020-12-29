@@ -2,7 +2,7 @@
 lang: en-US
 layout: wiki
 section: acww-research
-title: Village Structure
+title: Villager Structure
 ---
 
 Here you'll find the structure of the Villager part from AC:WW.
