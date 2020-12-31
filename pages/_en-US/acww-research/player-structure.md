@@ -31,7 +31,6 @@ EUR, USA and JPN have a special character encoding, which i marked with the Data
 | 0x1148 - 0x123B | Letter_Struct  | 0xF4     | Pocket Letter 1         |
 | 0x123C - 0x132F | Letter_Struct  | 0xF4     | Pocket Letter 2         |
 | 0x1330 - 0x1423 | Letter_Struct  | 0xF4     | Pocket Letter 3         |
-| 0x1424 - 0x1517 | Letter_Struct  | 0xF4     | Pocket Letter 4         |
 | 0x1518 - 0x160B | Letter_Struct  | 0xF4     | Pocket Letter 5         |
 | 0x160C - 0x16FF | Letter_Struct  | 0xF4     | Pocket Letter 6         |
 | 0x1700 - 0x17F3 | Letter_Struct  | 0xF4     | Pocket Letter 7         |
@@ -64,18 +63,20 @@ EUR, USA and JPN have a special character encoding, which i marked with the Data
 | 0x1D60 - 0x1D62 | uint8_t        | 0x3      | Future Letter D, M, Y   |
 | 0x1D63 - 0x21E3 | uint8_t        | 0x481    | Unknown 5               |
 | 0x21E4 - 0x21E7 | uint32_t       | 0x4      | Bank Amount             |
-| 0x21E8 - 0x2224 | uint8_t        | 0x3D     | Unknown 6               |
+| 0x21E8 - 0x2217 | uint8_t        | 0x30     | Unknown 6               |
+| 0x2218 - 0x2219 | uint16_t       | 0x2      | Birthday Day, Month     |
+| 0x221A - 0x2224 | uint8_t        | 0xB      | Unknown 7               |
 | 0x2225 - 0x2225 | uint8_t        | 0x1      | Acorn Festival Acorns   |
-| 0x2226 - 0x223B | uint8_t        | 0x16     | Unknown 7               |
+| 0x2226 - 0x223B | uint8_t        | 0x16     | Unknown 8               |
 | 0x223C - 0x223C | uint8_t        | 0x1      | See [Face_Hairstyle](#face_hairstyle) |
 | 0x223D - 0x223D | uint8_t        | 0x1      | See [Tan_HairColor](#tan_haircolor) |
-| 0x223E - 0x2275 | uint8_t        | 0x38     | Unknown 8               |
+| 0x223E - 0x2275 | uint8_t        | 0x38     | Unknown 9               |
 | 0x2276 - 0x2277 | uint16_t       | 0x2      | Town ID                 |
 | 0x2278 - 0x227F | WWChar         | 0x8      | Town Name               |
 | 0x2280 - 0x2281 | uint16_t       | 0x2      | Player ID               |
 | 0x2282 - 0x2289 | WWChar         | 0x8      | Player Name             |
 | 0x228A - 0x228A | uint8_t        | 0x1      | Gender                  |
-| 0x228B - 0x228B | uint8_t        | 0x1      | Unknown 9               |
+| 0x228B - 0x228B | uint8_t        | 0x1      | Unknown 10              |
 {% endcapture %}
 
 {{ eur_usa | markdownify }}
@@ -134,18 +135,20 @@ EUR, USA and JPN have a special character encoding, which i marked with the Data
 | 0x1C70 - 0x1C73 | uint32_t       | 0x4      | Bank Amount             |
 | 0x1C74 - 0x1C9D | uint8_t        | 0x2A     | Unknown 5               |
 | 0x1C9E - 0x1C9E | uint8_t        | 0x1      | Attic Bed               |
-| 0x1C9F - 0x1CB0 | uint8_t        | 0x12     | Unknown 5               |
+| 0x1C9F - 0x1CA3 | uint8_t        | 0x5      | Unknown 5               |
+| 0x1CA4 - 0x1CA5 | uint16_t       | 0x2      | Birthday, Day Month     |
+| 0x1CA6 - 0xACB0 | uint8_t        | 0xB      | Unknown 6               |
 | 0x1CB1 - 0x1CB1 | uint8_t        | 0x1      | Acorn Festival Acorns   |
-| 0x1CB2 - 0x1CC5 | uint8_t        | 0x14     | Unknown 6               |
+| 0x1CB2 - 0x1CC5 | uint8_t        | 0x14     | Unknown 7               |
 | 0x1CC6 - 0x1CC6 | uint8_t        | 0x1      | See [Face_Hairstyle](#face_hairstyle) |
 | 0x1CC7 - 0x1CC7 | uint8_t        | 0x1      | See [Tan_HairColor](#tan_haircolor) |
-| 0x1CC8 - 0x1CFB | uint8_t        | 0x36     | Unknown 7               |
+| 0x1CC8 - 0x1CFB | uint8_t        | 0x36     | Unknown 8               |
 | 0x1CFC - 0x1CFD | uint16_t       | 0x2      | Town ID                 |
 | 0x1CFE - 0x1D03 | WWChar         | 0x6      | Town Name               |
 | 0x1D04 - 0x1D05 | uint16_t       | 0x2      | Player ID               |
 | 0x1D06 - 0x1D0B | WWChar         | 0x6      | Player Name             |
 | 0x1D0C - 0x1D0C | uint8_t        | 0x1      | Gender                  |
-| 0x1D0D - 0x1D0F | uint8_t        | 0x3      | Unknown 8               |
+| 0x1D0D - 0x1D0F | uint8_t        | 0x3      | Unknown 9               |
 {% endcapture %}
 
 {{ jpn | markdownify }}
@@ -201,18 +204,20 @@ EUR, USA and JPN have a special character encoding, which i marked with the Data
 | 0x1C10 - 0x1C13 | uint32_t       | 0x4      | Wallet Amount           |
 | 0x1C14 - 0x24DF | uint8_t        | 0x7CC    | Unknown 4               |
 | 0x23E0 - 0x23E3 | uint32_t       | 0x4      | Bank Amount             |
-| 0x23E4 - 0x2420 | uint8_t        | 0x3D     | Unknown 5               |
+| 0x23E4 - 0x2414 | uint8_t        | 0x31     | Unknown 5               |
+| 0x2414 - 0x2415 | uint16_t       | 0x2      | Birthday, Day Month     |
+| 0x2416 - 0x2420 | uint8_t        | 0xB      | Unknown 6               |
 | 0x2421 - 0x2421 | uint8_t        | 0x1      | Acorn Festival Acorns   |
-| 0x2422 - 0x243B | uint8_t        | 0x1A     | Unknown 6               |
+| 0x2422 - 0x243B | uint8_t        | 0x1A     | Unknown 7               |
 | 0x243C - 0x243C | uint8_t        | 0x1      | See [Face_Hairstyle](#face_hairstyle) |
 | 0x243D - 0x243D | uint8_t        | 0x1      | See [Tan_HairColor](#tan_haircolor) |
-| 0x243E - 0x247D | uint8_t        | 0x40     | Unknown 7               |
+| 0x243E - 0x247D | uint8_t        | 0x40     | Unknown 8               |
 | 0x247E - 0x247F | uint16_t       | 0x2      | Town ID                 |
 | 0x2480 - 0x248B | char16_t       | 0xC      | Town Name               |
 | 0x248C - 0x248D | uint16_t       | 0x2      | Player ID               |
 | 0x248E - 0x2499 | char16_t       | 0xC      | Player Name             |
 | 0x249A - 0x249A | uint8_t        | 0x1      | Gender                  |
-| 0x249B - 0x249B | uint8_t        | 0x1      | Unknown                 |
+| 0x249B - 0x249B | uint8_t        | 0x1      | Unknown 9               |
 {% endcapture %}
 
 {{ kor | markdownify }}

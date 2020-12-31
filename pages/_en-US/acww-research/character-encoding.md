@@ -17,7 +17,7 @@ If you are an Hex Fiend user, you can also use the Encoding-JSON from [here](htt
 
 ## Tables
 <details>
- <summary>>Europe / USA Encoding Table</summary>
+ <summary>Europe / USA Encoding Table</summary>
 
 {% capture intl_table %}
 | Value | Character |
@@ -285,7 +285,7 @@ If you are an Hex Fiend user, you can also use the Encoding-JSON from [here](htt
 </details>
 
 <details>
- <summary>>JPN Encoding Table</summary>
+ <summary>JPN Encoding Table</summary>
 
 {% capture jpn_table %}
 | Value | Character |

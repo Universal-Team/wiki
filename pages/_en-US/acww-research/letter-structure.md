@@ -15,7 +15,7 @@ If send to a villager, the first byte of the Receiver Player ID is the Receiver 
 
 ## Structures
 <details>
- <summary>>EUR_USA LetterStruct</summary>
+ <summary>EUR_USA LetterStruct</summary>
 
 {% capture eur_usa %}
 | Offset        | Datatype | Size  | Content              |
@@ -49,7 +49,7 @@ If send to a villager, the first byte of the Receiver Player ID is the Receiver 
 </details>
 
 <details>
- <summary>>JPN LetterStruct</summary>
+ <summary>JPN LetterStruct</summary>
 
 {% capture jpn %}
 | Offset        | Datatype | Size  | Content              |
@@ -82,7 +82,7 @@ If send to a villager, the first byte of the Receiver Player ID is the Receiver 
 </details>
 
 <details>
- <summary>>KOR LetterStruct</summary>
+ <summary>KOR LetterStruct</summary>
 
 {% capture kor %}
 | Offset        | Datatype | Size  | Content              |
@@ -117,7 +117,7 @@ If send to a villager, the first byte of the Receiver Player ID is the Receiver 
 
 ## Other
 <details>
- <summary>>Paper IDs</summary>
+ <summary>Paper IDs</summary>
 
 {% capture paper %}
 | ID     | Name                     |
@@ -193,7 +193,7 @@ If send to a villager, the first byte of the Receiver Player ID is the Receiver 
 </details>
 
 <details>
- <summary>>Letter Flags</summary>
+ <summary>Letter Flags</summary>
 
 {% capture letter_flags %}
 | Flag  | Content                |

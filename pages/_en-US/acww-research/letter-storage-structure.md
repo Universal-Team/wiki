@@ -10,7 +10,7 @@ The Letter-Storage can be found at the town hall as the option "Save Letter" on 
 
 ## Structures
 <details>
- <summary>>EUR_USA Letter Storage Struct</summary>
+ <summary>EUR_USA Letter Storage Struct</summary>
 
 {% capture eur_usa %}
 | Offset              | Datatype        | Size     | Content                  |
@@ -30,7 +30,7 @@ The Letter-Storage can be found at the town hall as the option "Save Letter" on 
 </details>
 
 <details>
- <summary>>JPN Letter Storage Struct</summary>
+ <summary>JPN Letter Storage Struct</summary>
 
 {% capture jpn %}
 | Offset              | Datatype        | Size     | Content                  |
@@ -50,7 +50,7 @@ The Letter-Storage can be found at the town hall as the option "Save Letter" on 
 </details>
 
 <details>
- <summary>>KOR Letter Storage Struct</summary>
+ <summary>KOR Letter Storage Struct</summary>
 
 {% capture kor %}
 | Offset              | Datatype        | Size     | Content                  |
