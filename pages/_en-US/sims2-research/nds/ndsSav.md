@@ -1,8 +1,9 @@
 ---
+category: NDS
 lang: en-US
 layout: wiki
 section: sims2-research
-title: (NDS) SAV Structure
+title: SAV Structure
 ---
 
 ### Notes

@@ -1,8 +1,9 @@
 ---
+category: GBA
 lang: en-US
 layout: wiki
 section: sims2-research
-title: (GBA) Slot Structure
+title: Slot Structure
 ---
 
 ## Notes
