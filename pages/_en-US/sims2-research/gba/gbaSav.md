@@ -14,8 +14,6 @@ The Sims 2 GBA's used SAVSize is `0x5000`, but `0x5000 - 0xFFFF` is just unused 
 It seems the game exist in EUR and USA variant... though SuperSaiyajinStackZ haven't gotten a USA version *yet*, but pretty sure the SAV Structure would be the same between both variants. Reports about, if the structure is the same would be appreciated in the [Universal-Team discord server](https://universal-team.net/discord) under the channel `#stackjects`.
 
 
-## Structures
-
 ### GBASAV
 {% capture GBASAV %}
 | Offset          | Datatype          | Size     | Content                                  |
@@ -40,8 +38,25 @@ It seems the game exist in EUR and USA variant... though SuperSaiyajinStackZ hav
 | 0x0 - 0xFFF     |                 | 0x1000   | Metadata and Settings Size                                    |
 |                 |                 |          |                                                               |
 | 0x0 - 0x6       | uint8_t         | 0x7      | Unique Game Header (0x53, 0x54, 0x57, 0x4E, 0x30, 0x32, 0x34) |
-| 0x7 - 0xF       | uint8_t         | 0x8      | Settings Related things?                                      |
+| 0x7 - 0x9       | uint8_t         | 0x3      | Settings Related things?                                      |
+| 0xA - 0xA       | uint8_t         | 0x1      | See `Settings_Language` below for more                        |
+| 0xB - 0xF       | uint8_t         | 0x5      | Settings Related things?                                      |
 | 0x10 - 0xFFF    | uint8_t         | 0xFF0    | Metadata Related things?                                      |
 {% endcapture %}
 
 {{ MetaDataSettings | markdownify }}
+
+
+### Settings_Language
+{% capture SettingsLanguage %}
+| Value | Language    |
+| ----- | ----------- |
+| 0     | English     |
+| 1     | Nederlands  |
+| 2     | Français    |
+| 3     | Deutsch     |
+| 4     | Italiano    |
+| 5     | Español     |
+{% endcapture %}
+
+{{ SettingsLanguage | markdownify }}
