@@ -29,7 +29,11 @@ Sizes marked with `0x8/9` means, the exact size is not 100% known yet.
 | 0xFD - 0xFD     | uint8_t           | 0x1      | Cowbells Amount                          |
 | 0xFE - 0xFE     | uint8_t           | 0x1      | Alien Spaceship Parts Amount             |
 | 0xFF - 0xFF     | uint8_t           | 0x1      | Nuclear Fuelrods Amount                  |
-| 0x100 - 0x112   | uint8_t           | 0x13     | Unknown                                  |
+| 0x100 - 0x100   | uint8_t           | 0x1      | Empty Chug-Chug Cola Can Sell price      |
+| 0x101 - 0x101   | uint8_t           | 0x1      | Cowbells Sell price                      |
+| 0x102 - 0x102   | uint8_t           | 0x1      | Alien Spaceship Parts Sell price         |
+| 0x103 - 0x103   | uint8_t           | 0x1      | Nuclear Fuelrods Sell price              |
+| 0x104 - 0x112   | uint8_t           | 0xF      | Unknown                                  |
 | 0x10A - 0x113   | Episode_Struct    | 0xA      | Buried By the Mob Episode                |
 | 0x114 - 0x11D   | Episode_Struct    | 0xA      | What Digs Beneath Episode                |
 | 0x11E - 0x122   | Episode_Struct    | 0x5      | The Doomed Earth Episode                 |
