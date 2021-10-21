@@ -19,7 +19,7 @@ EUR, USA and JPN have a special character encoding, which i marked with the Data
 | --------------- | --------------- | -------- | ----------------------- |
 | 0x0 - 0x15FDF   |                 | 0x15FE0  | Main Save Size          |
 |                 |                 |          |                         |
-| 0x0 - 0x1       | uint16_t        | 0x2      | See [Gamecode](#gamecode) |
+| 0x0 - 0x1       | uint16_t        | 0x2      | See [Identifier](#identifier) |
 | 0x2 - 0x3       | uint16_t        | 0x2      | Town ID                 |
 | 0x4 - 0xB       | WWChar          | 0x8      | Town Name               |
 | 0xC - 0x2297    | Player_Struct   | 0x228C   | Player 1                |
@@ -55,7 +55,7 @@ EUR, USA and JPN have a special character encoding, which i marked with the Data
 | --------------- | --------------- | -------- | ----------------------- |
 | 0x0 - 0x12223   |                 | 0x12224  | Main Save Size          |
 |                 |                 |          |                         |
-| 0x0 - 0x1       | uint16_t        | 0x2      | See [Gamecode](#gamecode) |
+| 0x0 - 0x1       | uint16_t        | 0x2      | See [Identifier](#identifier) |
 | 0x2 - 0x3       | uint16_t        | 0x2      | Town ID                 |
 | 0x4 - 0x9       | WWChar          | 0x6      | Town Name               |
 | 0xA - 0xB       | uint8_t         | 0x2      | Unknown 1               |
@@ -92,7 +92,7 @@ EUR, USA and JPN have a special character encoding, which i marked with the Data
 | ----------------- | --------------- | -------- | ----------------------- |
 | 0x0 - 0x173FB     |                 | 0x173FC  | Main Save Size          |
 |                   |                 |          |                         |
-| 0x0 - 0x1         | uint16_t        | 0x2      | See [Gamecode](#gamecode) |
+| 0x0 - 0x1         | uint16_t        | 0x2      | See [Identifier](#identifier) |
 | 0x2 - 0x3         | uint16_t        | 0x2      | Town ID                 |
 | 0x4 - 0xF         | char16_t        | 0xC      | Town Name               |
 | 0x10 - 0x13       | uint8_t         | 0x4      | Unknown 1               |
@@ -121,17 +121,17 @@ EUR, USA and JPN have a special character encoding, which i marked with the Data
 
 </details>
 
-### Gamecode
-Byte 0x0 seems to contain a Gamecode or something like that in the savefile, which is listed below.
+### Identifier
+Byte 0x0 seems to contain a identifier or something like that in the savefile, which is listed below.
 
 Byte 0x1 seems to be always 0x0.
 
-| Gamecode | Region   |
-| -------- | -------- |
-| 0xC5     | Europe   |
-| 0x8A     | USA      |
-| 0x32     | Japanese |
-| 0x32     | Korean   |
+| Identifier | Region   |
+| ---------- | -------- |
+| 0xC5       | Europe   |
+| 0x8A       | USA      |
+| 0x32       | Japanese |
+| 0x32       | Korean   |
 
 ### Acres
 Editing Acres can potential damage your savefile, so it's important to know what you are doing.
